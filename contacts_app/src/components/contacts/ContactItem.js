@@ -1,9 +1,9 @@
 import React from 'react';
 
-const ContactItem = ({firstName, lastName}) => {
+const ContactItem = ({ contact }) => {
     return (
         <div>
-            <span>{lastName}, {firstName}</span>
+            <span>{contact.lastName}, {contact.firstName}</span>
             <div className="section-line"></div>
         </div>
     )

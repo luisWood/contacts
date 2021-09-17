@@ -1,33 +1,57 @@
 .container {
-    background-color: #eeeeee;
-    width: 70vw;
+    width: 100%;
     height: 40vw;
     position: relative;
-    left: 15vw;
-    float: center;
   }
   
   /* TABS */ 
   .tabs {
-    display: flex;
-    position: relative;
-    left: 15vw;
-    width: 78vw;
-    float: center;
+    position: relative; 
+    max-width: 65vw;
   }
   
-  .single-tab {
+  .tabs-wrapper {
+    display: inline-grid;
+    grid-template-columns: repeat(26, 1fr);
+    margin-left: 3vh;
+
+    }
+  
+  .tab-selected {
     background-color:#eeeeee;
-    border: 1px solid black;
-    /* width: 2.554vw; */
-    width: 3.273%;
+    border: 1px solid #acacac;
+    width: 3.2vw;
     text-align: center;
+    border-bottom: none;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    cursor: pointer;
   }
+
+  .single-tab {
+    background-color:#aeadad;
+    border: 1px solid #acacac;
+    width: 3.2vw;
+    text-align: center;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    cursor: pointer;
+  }
+
+  .contact-count {
+    float: right;
+    text-align: right;
+    margin-top: 40%;
+    margin-right: 2px;
+    font-size: 20%;
+
+  }
+  
 
  /* CONTACTS  */
   .contact-list-container {
-    /* background-color: cadetblue; */
-    width: 65vw;
+    background-color: #eeeeee;
+    width: 90%;
     height: 35vw;
     position: relative;
     margin-left: 3vh;
