@@ -1,3 +1,7 @@
+* {
+  font-family: "Lucida Console", monospace;
+}
+
 .container {
     width: 100%;
     height: 40vw;
@@ -18,24 +22,33 @@
     }
   
   .tab-selected {
-    background-color:#eeeeee;
-    border: 1px solid #acacac;
+    background-color:#EFEFEF;
+    border: 1px solid #C3C1C1;
     width: 3.2vw;
     text-align: center;
     border-bottom: none;
-    border-top-left-radius: 30%;
-    border-top-right-radius: 30%;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
     cursor: pointer;
   }
 
-  .single-tab {
-    background-color:#aeadad;
-    border: 1px solid #acacac;
+  .tab-default {
+    background-color:#C3C1C1;
+    border: 1px solid #EFEFEF;
     width: 3.2vw;
     text-align: center;
-    border-top-left-radius: 30%;
-    border-top-right-radius: 30%;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
     cursor: pointer;
+  }
+
+  .tab-empty {
+    color: #EFEFEF;
+    background-color: #C3C1C1;
+    width: 3.2vw;
+    text-align: center;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
   }
 
   .contact-count {
@@ -43,38 +56,89 @@
     text-align: right;
     margin-top: 40%;
     margin-right: 2px;
-    font-size: 20%;
+    font-size: 60%;
 
   }
   
 
  /* CONTACTS  */
   .contact-list-container {
-    background-color: #eeeeee;
     width: 90%;
-    height: 35vw;
     position: relative;
+    padding-top: 5vh;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr !important;
+
+  }
+
+  .contact {
+    padding-right: 1px;
+    height: 10vh;
+  }
+
+  .contact-index-name {
+    margin-left: 2vh;
+    margin-top: 2vh;
+    cursor: pointer;
+
+  }
+
+  .contact-list-wrapper {
+    border: 1px solid #605F5E;
+    border-top: none;
+    background-color: #EFEFEF;
+    min-height: 60vw;
+    width: 90%;
     margin-left: 3vh;
-    display: flex;
-    padding-top: 10px;
   }
-
-  .contact-column{
-    /* background-color: rgb(226, 225, 140); */
-    /* border: 1px solid black; */
-    float: left;
-    width: 50%;
-    padding: 10px;
-    display: block; 
-  }
-
 
 /* --------------- */
 
 .section-line {
-  border: 1px solid #c6c6c6;
+  border: 1px solid #605F5E;
   /* border: 1px solid rgb(0, 0, 0); */
-  width: 100%;
+  width: 90%;
   height: 0;
-  margin: 1vh 0vh;
+  margin: 2vh 1vh;
 }
+
+.unclickable {
+  cursor: pointer;
+}
+
+.general-data-wrapper {
+  background-color: #EFEFEF;
+  width: 60vw;
+  height: auto;
+  
+}
+
+.data-wrapper {
+  margin-top: 2vw;
+  display: inline-grid;
+  grid-template-columns: 1fr 3fr !important;
+  margin-bottom: 5vw;
+}
+
+.other-info {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr !important;
+}
+
+.info-category {
+  font-weight: bolder;
+  font-size: 70%;
+  text-align: right;
+  margin-right: 1vw;
+}
+
+.info-value {
+font-weight: lighter;
+}
+
+.name-detail {
+  font-size: 250%;
+}
+/* 605F5E dark */
+/* EFEFEF light */
+/* C3C1C1 mid */

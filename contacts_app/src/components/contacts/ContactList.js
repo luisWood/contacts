@@ -1,27 +1,19 @@
 import React from "react";
-import ContactItem from './ContactItem';
+import ContactItem from "./ContactItem";
 
 const ContactList = ({ selectedContacts }) => {
+  const renderContacts = selectedContacts.map((contact) => {
+    return <ContactItem key={contact.phone} contact={contact} />;
+  });
 
-   const renderContacts = (contacts) => {
-    contacts.map(contact => {
-        console.log(contact)
-        return (
-            <ContactItem contact={contact}/>
-        )
-    });
-    }
+  return (
+    <div className="contact-list-wrapper">
+      <div className="contact-list-container">{renderContacts}</div>
+    </div>
+  );
+};
 
-
-    const printSelectedContacts = () => {
-        // console.log(selectedContacts)
-    }
-
-    return (
-        <div onClick={() => {printSelectedContacts()}}>
-            <div className="contact-list-container">{renderContacts(selectedContacts)}</div>
-        </div>
-    )
-}
-
+ContactList.defaultProps = {
+  selectedContacts: [],
+};
 export default ContactList;
