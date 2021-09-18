@@ -1,12 +1,27 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import "./contact-detail-style.css";
 
 const ContactDetail = ({ clearSelectedCard, selectedCard }) => {
-  useEffect(() => {
-    console.log("loaded");
-  }, []);
+  const wrapperRef = useRef(null);
+  useOutsideClickClose(wrapperRef);
+
+  function useOutsideClickClose(ref) {
+    useEffect(() => {
+      function handleClickOutside(event) {
+        if (ref.current && !ref.current.contains(event.target)) {
+          clearSelectedCard();
+        }
+      }
+
+      document.addEventListener("mousedown", handleClickOutside);
+      return () => {
+        document.removeEventListener("mousedown", handleClickOutside);
+      };
+    }, [ref]);
+  }
+
   return (
-    <div className="general-data-wrapper">
+    <div ref={wrapperRef} className="general-data-wrapper">
       <button
         onClick={() => {
           clearSelectedCard();

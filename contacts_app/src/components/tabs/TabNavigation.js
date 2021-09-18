@@ -8,7 +8,7 @@ const TabNavigation = ({ selectedContacts, selectedTab, fillSelectedTab }) => {
   };
 
   return (
-    <div className="tabs-wrapper">
+    <div className="tabs-wrapper tabs-columns">
       <Tab
         selectedTab={selectedTab}
         letter="A"
