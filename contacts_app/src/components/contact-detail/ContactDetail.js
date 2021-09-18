@@ -32,7 +32,7 @@ const ContactDetail = ({ clearSelectedCard, selectedCard }) => {
       </button>
       <div className="data-wrapper">
         <div className="photo-wrapper">
-          <img className="contact-photo" alt="photo" src={selectedCard.photo} />
+          <img className="contact-photo" alt="contact" src={selectedCard.photo} />
         </div>
         <div className="general-details">
           <span className="name-detail">
@@ -59,12 +59,3 @@ const ContactDetail = ({ clearSelectedCard, selectedCard }) => {
 };
 
 export default ContactDetail;
-{
-  /* 
- 
-            <span>phone: "(017)-381-3861"</span>
-            <span>photo: "https://randomuser.me/api/portraits/women/21.jpg"</span>
-            <span>postcode: 34827</span>
-            <span>state: "Kansas"</span>
-            <span>street: "1208 Taylor St</span> */
-}

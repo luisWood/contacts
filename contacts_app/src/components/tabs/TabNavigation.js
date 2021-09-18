@@ -4,8 +4,6 @@ import Tab from "./Tab";
 
 const TabNavigation = ({ selectedContacts, selectedTab, fillSelectedTab }) => {
   useEffect(() => {}, [selectedTab]);
-  const tabsSetup = () => {
-  };
 
   return (
     <div className="tabs-wrapper tabs-columns">

@@ -1,7 +1,7 @@
 import React from "react";
 import TabNavigation from "../tabs/TabNavigation";
 import ContactList from "./ContactList";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import ContactDetail from "../contact-detail/ContactDetail";
 import "../general-style.css";
 
@@ -9,7 +9,6 @@ const ContactBook = ({ userContacts }) => {
   const [selectedTab, setSelectedTab] = useState("A");
   const [selectedContacts, setSelectedContacts] = useState(userContacts["A"]);
   const [selectedCard, setSelectedCard] = useState();
-  const ref = useRef();
 
   useEffect(() => {
   }, [selectedCard])
