@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "../style.css";
+import "./tabs-style.css";
 import Tab from "./Tab";
 
 const TabNavigation = ({ selectedContacts, selectedTab, fillSelectedTab }) => {

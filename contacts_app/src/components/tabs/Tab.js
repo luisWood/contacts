@@ -1,10 +1,7 @@
 import React from "react";
-import "../style.css";
 
 const Tab = ({ selectedContacts, selectedTab, letter, fillSelectedTab }) => {
-  const printSelectedContacts = () => {
-    // console.log(selectedContacts)
-  };
+
   return (
     <div
       onClick={() => {

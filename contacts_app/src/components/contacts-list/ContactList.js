@@ -1,9 +1,11 @@
 import React from "react";
 import ContactItem from "./ContactItem";
+import "./contact-list-style.css";
 
-const ContactList = ({ selectedContacts }) => {
+const ContactList = ({ selectedContacts, selectCard }) => {
+
   const renderContacts = selectedContacts.map((contact) => {
-    return <ContactItem key={contact.phone} contact={contact} />;
+    return <ContactItem selectCard={selectCard} key={contact.phone} contact={contact} />;
   });
 
   return (

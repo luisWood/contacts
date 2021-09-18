@@ -1,0 +1,43 @@
+ 
+ /* CONTACTS  */
+ .contact-list-wrapper {
+  border: 1px solid #605F5E;
+  border-top: none;
+  background-color: #EFEFEF;
+  height: 50vw;
+  width: 90%;
+  margin-left: 3vh;    
+  overflow-y: auto;
+
+}
+
+ .contact-list-container {
+    width: 90%;
+    position: relative;
+    padding-top: 5vh;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr !important;
+
+  }
+
+  .contact {
+    padding-right: 1px;
+    height: 10vh;
+  }
+
+  .contact-index-name {
+    margin-left: 2vh;
+    margin-top: 2vh;
+    cursor: pointer;
+
+  }
+
+
+.section-line {
+  border: 1px solid #605F5E;
+  /* border: 1px solid rgb(0, 0, 0); */
+  width: 90%;
+  height: 0;
+  margin: 2vh 1vh;
+}
+

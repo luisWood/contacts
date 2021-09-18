@@ -1,0 +1,64 @@
+
+  /* TABS */ 
+  .tabs {
+    /* position: relative;  */
+    max-width: 65vw;
+  }
+  
+  .tabs-wrapper {
+    position: absolute;
+    display: inline-grid;
+    grid-template-columns: repeat(26, 1fr);
+    margin-left: 3vh;
+    z-index: 1;
+    }
+
+    .tab-letter {
+      padding-top: 0.5vw;
+    }
+  
+  .tab-selected {
+    background-color:#EFEFEF;
+    border: 1px solid #C3C1C1;
+    width: 3.2vw;
+    text-align: center;
+    border-bottom: none;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+    cursor: pointer;
+    padding-top: 0.5vw;
+  }
+
+  .tab-default {
+    background-color:#C3C1C1;
+    border: 1px solid #EFEFEF;
+    width: 3.2vw;
+    text-align: center;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+    cursor: pointer;
+    padding-top: 0.5vw;
+  }
+
+  .tab-empty {
+    color: #969696;
+    background-color: #C3C1C1;
+    width: 3.2vw;
+    text-align: center;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+    padding-top: 0.5vw;
+  }
+
+  .contact-count {
+    float: right;
+    text-align: right;
+    margin-top: 40%;
+    margin-right: 2px;
+    font-size: 60%;
+  }
+  
+  .unclickable {
+    cursor: pointer;
+  }
+  
