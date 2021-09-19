@@ -1,7 +1,7 @@
 .contact-list-wrapper {
   border-top: none;
   background-color: #efefef;
-  height: 50vw;
+  height: 50vw;;
   width: 90%;
   margin-left: 3vh;
   overflow-y: auto;
@@ -33,6 +33,14 @@
   margin: 2vh 1vh;
 }
 
-.blur {
-  filter: blur(3px);
+@media screen and (max-width: 400px) {
+  .contact-list-wrapper {
+    padding-top: 20vw;
+    border-top: none;
+    background-color: #efefef;
+    height: 165vw;
+    width: 100%;
+    overflow-y: auto;
+    margin-left: 0;
+  }
 }

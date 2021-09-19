@@ -59,3 +59,24 @@
   cursor: pointer;
   margin: 1vw;
 }
+
+@media screen and (max-width: 400px) {
+  * {
+    font-size: 3vw;
+  }
+  .general-data-wrapper {
+    background-color: #efefef;
+    width: 90%;
+    height: 60vw;
+    box-shadow: 0px 5px 15px #605f5e;
+    z-index: 2;
+    position: absolute;
+    margin: 55% 4%;
+  }
+
+  .data-wrapper {
+    margin-top: 2vw;
+    display: inline-grid;
+    grid-template-columns: 1fr 4fr !important;
+  }
+}
