@@ -35,10 +35,10 @@
 
 @media screen and (max-width: 400px) {
   .contact-list-wrapper {
-    padding-top: 20vw;
+    padding-top: 12vw;
     border-top: none;
     background-color: #efefef;
-    height: 165vw;
+    height: 202vw;
     width: 100%;
     overflow-y: auto;
     margin-left: 0;
