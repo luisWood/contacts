@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./contact-detail-style.css";
+import OtherInfoEnty from './OtherInfoEnty'
 
 const ContactDetail = ({ clearSelectedCard, selectedCard }) => {
   const wrapperRef = useRef(null);
@@ -43,18 +44,12 @@ const ContactDetail = ({ clearSelectedCard, selectedCard }) => {
             {selectedCard.lastName}, {selectedCard.firstName}
           </span>
           <div className="other-info">
-            <span className="info-category">City:</span>
-            <span className="info-value">{selectedCard.city}</span>
-            <span className="info-category">email: </span>
-            <span className="info-value">{selectedCard.email}</span>
-            <span className="info-category">phone: </span>
-            <span className="info-value">{selectedCard.phone}</span>
-            <span className="info-category">street: </span>
-            <span className="info-value">{selectedCard.street}</span>
-            <span className="info-category">state: </span>
-            <span className="info-value">{selectedCard.state}</span>
-            <span className="info-category">postcode: </span>
-            <span className="info-value">{selectedCard.postcode}</span>
+            <OtherInfoEnty category="City:" value={selectedCard.city} />
+            <OtherInfoEnty category="E-mail:" value={selectedCard.email} />
+            <OtherInfoEnty category="Phone:" value={selectedCard.phone} />
+            <OtherInfoEnty category="Address:" value={selectedCard.street} />
+            <OtherInfoEnty category="State:" value={selectedCard.state} />
+            <OtherInfoEnty category="Postcode:" value={selectedCard.postcode} />
           </div>
         </div>
       </div>

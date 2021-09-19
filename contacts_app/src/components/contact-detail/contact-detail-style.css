@@ -36,7 +36,7 @@
 }
 
 .other-info {
-  display: inline-grid;
+  display: block;
   grid-template-columns: 1fr 3fr !important;
   margin-top: 5vw;
   margin-left: 2vw;
