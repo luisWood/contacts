@@ -3,15 +3,13 @@ import ReactDOM from "react-dom";
 import axios from "axios";
 import ContactBook from "./components/contacts-list/ContactBook";
 
-
 const App = () => {
   const [userData, setUserData] = useState({});
-  
+
   useEffect(() => {
     fetchData();
   }, []);
 
-  // fix retrieval function
   async function fetchData() {
     axios.get("https://randomuser.me/api/?results=1000").then((response) => {
       var alphaberMapping = {

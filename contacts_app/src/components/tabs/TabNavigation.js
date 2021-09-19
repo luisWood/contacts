@@ -17,7 +17,6 @@ const TabNavigation = ({ selectedContacts, selectedTab, fillSelectedTab }) => {
     return tabs
   }
 
-
   return (
     <div className="tabs-wrapper tabs-columns">
       {renderTabs()}

@@ -32,7 +32,11 @@ const ContactDetail = ({ clearSelectedCard, selectedCard }) => {
       </button>
       <div className="data-wrapper">
         <div className="photo-wrapper">
-          <img className="contact-photo" alt="contact" src={selectedCard.photo} />
+          <img
+            className="contact-photo"
+            alt="contact"
+            src={selectedCard.photo}
+          />
         </div>
         <div className="general-details">
           <span className="name-detail">

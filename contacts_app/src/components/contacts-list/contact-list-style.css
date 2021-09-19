@@ -1,6 +1,4 @@
-/* CONTACTS  */
 .contact-list-wrapper {
-  /* border: 1px solid #605f5e; */
   border-top: none;
   background-color: #efefef;
   height: 50vw;
@@ -30,7 +28,6 @@
 
 .section-line {
   border: 1px solid #605f5e;
-  /* border: 1px solid rgb(0, 0, 0); */
   width: 90%;
   height: 0;
   margin: 2vh 1vh;

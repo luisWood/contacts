@@ -1,7 +1,6 @@
 import React from "react";
 
 const Tab = ({ contacts, tabTag, letter, fillSelectedTab }) => {
-
   return (
     <div
       onClick={() => {
@@ -10,11 +9,9 @@ const Tab = ({ contacts, tabTag, letter, fillSelectedTab }) => {
         }
       }}
       className={
-        contacts && contacts.length === 0 ? 
-        "tab-empty" :
-        tabTag === letter ? 
-        "tab-selected"
-          : "tab-default"
+        contacts && contacts.length === 0
+          ? "tab-empty" : tabTag === letter
+          ? "tab-selected" : "tab-default"
       }
     >
       <span className="tab-letter">{letter}</span>

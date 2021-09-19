@@ -1,15 +1,13 @@
-/* TABS */
 .tabs {
-  /* position: relative;  */
   max-width: 65vw;
 }
 
 .tabs-columns {
   grid-template-columns: repeat(26, 1fr);
+  width: 90%;
 }
 
 .tabs-wrapper {
-  background-color: #efefef;
   position: absolute;
   display: inline-grid;
   margin-left: 3vh;
@@ -24,7 +22,7 @@
 .tab-selected {
   background-color: #efefef;
   border: 1px solid #c3c1c1;
-  width: 3.2vw;
+  width: 3,8461538462%;
   text-align: center;
   border-bottom: none;
   border-top-left-radius: 15%;
@@ -36,7 +34,7 @@
 .tab-default {
   background-color: #c3c1c1;
   border: 1px solid #efefef;
-  width: 3.2vw;
+  width: 3,8461538462%;
   text-align: center;
   border-top-left-radius: 15%;
   border-top-right-radius: 15%;
@@ -47,7 +45,8 @@
 .tab-empty {
   color: #969696;
   background-color: #c3c1c1;
-  width: 3.2vw;
+  width: 3,8461538462%;
+
   text-align: center;
   border-top-left-radius: 15%;
   border-top-right-radius: 15%;
