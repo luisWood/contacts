@@ -67,15 +67,16 @@
 
 @media screen and (max-width: 400px) {
   .tabs-wrapper {
+    background-color: #efefef;
     position: absolute;
     display: inline-grid;
-    margin-left: 3vh;
+    margin-left: 0;
     z-index: 1;
     padding-bottom: 3vw;
   }
   
   .tabs-columns {
     grid-template-columns: repeat(13, 1fr);
-    width: 90%;
+    width: 100%;
   }
 }
