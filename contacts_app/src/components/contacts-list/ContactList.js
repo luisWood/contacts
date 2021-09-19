@@ -2,14 +2,15 @@ import React from "react";
 import ContactItem from "./ContactItem";
 import "./contact-list-style.css";
 
-const ContactList = ({ selectedContacts, selectCard }) => {
+const ContactList = ({ selectedContacts, selectCard, selectedCard }) => {
 
   const renderContacts = selectedContacts.map((contact) => {
+    console.log()
     return <ContactItem selectCard={selectCard} key={contact.phone} contact={contact} />;
   });
 
   return (
-    <div className="contact-list-wrapper">
+    <div className={` contact-list-wrapper ${selectedCard !== undefined? 'blur' : ''}`}>
       <div className="contact-list-container">{renderContacts}</div>
     </div>
   );

@@ -69,7 +69,6 @@ const App = () => {
   return (
     <div>
       <ContactBook userContacts={userData} />
-      {/* <ContactDetail /> */}
     </div>
   );
 };

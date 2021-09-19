@@ -8,7 +8,7 @@ import "../general-style.css";
 const ContactBook = ({ userContacts }) => {
   const [selectedTab, setSelectedTab] = useState("A");
   const [selectedContacts, setSelectedContacts] = useState(userContacts["A"]);
-  const [selectedCard, setSelectedCard] = useState();
+  const [selectedCard, setSelectedCard] = useState(undefined);
 
   useEffect(() => {
   }, [selectedCard])
@@ -18,20 +18,6 @@ const ContactBook = ({ userContacts }) => {
       setSelectedContacts(userContacts[selectedTab]);
     }
   }, [selectedTab, userContacts]);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   const selectNewDetail = (contact) => {
     setSelectedCard(contact)
@@ -48,7 +34,6 @@ const ContactBook = ({ userContacts }) => {
   return (
     <div>
       <div className="container">
-      {/* <div onClick={() => selectedCard ? clearSelectedCard() : null } className="container"> */}
         <TabNavigation
           selectedContacts={userContacts}
           selectedTab={selectedTab}

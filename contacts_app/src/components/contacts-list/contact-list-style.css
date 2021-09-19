@@ -14,7 +14,7 @@
   position: relative;
   display: inline-grid;
   grid-template-columns: 1fr 1fr !important;
-  margin-top: 1vw;
+  margin-top: 7vw;
 }
 
 .contact {
@@ -34,4 +34,8 @@
   width: 90%;
   height: 0;
   margin: 2vh 1vh;
+}
+
+.blur {
+  filter: blur(3px);
 }

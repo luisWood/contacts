@@ -1,168 +1,27 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./tabs-style.css";
 import Tab from "./Tab";
 
 const TabNavigation = ({ selectedContacts, selectedTab, fillSelectedTab }) => {
-  useEffect(() => {}, [selectedTab]);
+  const renderTabs = () => {
+    const tabs = ["A","B","C", "D", "E", "F", "G", "H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"].map(element => {
+      return <Tab
+       key={element}
+        tabTag={selectedTab}
+        letter={element}
+        fillSelectedTab={fillSelectedTab}
+        contacts={selectedContacts[element]}
+      />
+    })
+
+    return tabs
+  }
+
 
   return (
     <div className="tabs-wrapper tabs-columns">
-      <Tab
-        selectedTab={selectedTab}
-        letter="A"
-        fillSelectedTab={fillSelectedTab}
-        selectedContacts={selectedContacts.A}
-      />
-      <Tab
-        selectedTab={selectedTab}
-        letter="B"
-        fillSelectedTab={fillSelectedTab}
-        selectedContacts={selectedContacts.B}
-      />
-      <Tab
-        selectedTab={selectedTab}
-        letter="C"
-        fillSelectedTab={fillSelectedTab}
-        selectedContacts={selectedContacts.C}
-      />
-      <Tab
-        selectedTab={selectedTab}
-        letter="D"
-        fillSelectedTab={fillSelectedTab}
-        selectedContacts={selectedContacts.D}
-      />
-      <Tab
-        selectedTab={selectedTab}
-        letter="E"
-        fillSelectedTab={fillSelectedTab}
-        selectedContacts={selectedContacts.E}
-      />
-      <Tab
-        selectedTab={selectedTab}
-        letter="F"
-        fillSelectedTab={fillSelectedTab}
-        selectedContacts={selectedContacts.F}
-      />
-      <Tab
-        selectedTab={selectedTab}
-        letter="G"
-        fillSelectedTab={fillSelectedTab}
-        selectedContacts={selectedContacts.G}
-      />
-      <Tab
-        selectedTab={selectedTab}
-        letter="H"
-        fillSelectedTab={fillSelectedTab}
-        selectedContacts={selectedContacts.H}
-      />
-      <Tab
-        selectedTab={selectedTab}
-        letter="I"
-        fillSelectedTab={fillSelectedTab}
-        selectedContacts={selectedContacts.I}
-      />
-      <Tab
-        selectedTab={selectedTab}
-        letter="J"
-        fillSelectedTab={fillSelectedTab}
-        selectedContacts={selectedContacts.J}
-      />
-      <Tab
-        selectedTab={selectedTab}
-        letter="K"
-        fillSelectedTab={fillSelectedTab}
-        selectedContacts={selectedContacts.K}
-      />
-      <Tab
-        selectedTab={selectedTab}
-        letter="L"
-        fillSelectedTab={fillSelectedTab}
-        selectedContacts={selectedContacts.L}
-      />
-      <Tab
-        selectedTab={selectedTab}
-        letter="M"
-        fillSelectedTab={fillSelectedTab}
-        selectedContacts={selectedContacts.M}
-      />
-      <Tab
-        selectedTab={selectedTab}
-        letter="N"
-        fillSelectedTab={fillSelectedTab}
-        selectedContacts={selectedContacts.N}
-      />
-      <Tab
-        selectedTab={selectedTab}
-        letter="O"
-        fillSelectedTab={fillSelectedTab}
-        selectedContacts={selectedContacts.O}
-      />
-      <Tab
-        selectedTab={selectedTab}
-        letter="P"
-        fillSelectedTab={fillSelectedTab}
-        selectedContacts={selectedContacts.P}
-      />
-      <Tab
-        selectedTab={selectedTab}
-        letter="Q"
-        fillSelectedTab={fillSelectedTab}
-        selectedContacts={selectedContacts.Q}
-      />
-      <Tab
-        selectedTab={selectedTab}
-        letter="R"
-        fillSelectedTab={fillSelectedTab}
-        selectedContacts={selectedContacts.R}
-      />
-      <Tab
-        selectedTab={selectedTab}
-        letter="S"
-        fillSelectedTab={fillSelectedTab}
-        selectedContacts={selectedContacts.S}
-      />
-      <Tab
-        selectedTab={selectedTab}
-        letter="T"
-        fillSelectedTab={fillSelectedTab}
-        selectedContacts={selectedContacts.T}
-      />
-      <Tab
-        selectedTab={selectedTab}
-        letter="U"
-        fillSelectedTab={fillSelectedTab}
-        selectedContacts={selectedContacts.U}
-      />
-      <Tab
-        selectedTab={selectedTab}
-        letter="V"
-        fillSelectedTab={fillSelectedTab}
-        selectedContacts={selectedContacts.V}
-      />
-      <Tab
-        selectedTab={selectedTab}
-        letter="W"
-        fillSelectedTab={fillSelectedTab}
-        selectedContacts={selectedContacts.W}
-      />
-      <Tab
-        selectedTab={selectedTab}
-        letter="X"
-        fillSelectedTab={fillSelectedTab}
-        selectedContacts={selectedContacts.X}
-      />
-      <Tab
-        selectedTab={selectedTab}
-        letter="Y"
-        fillSelectedTab={fillSelectedTab}
-        selectedContacts={selectedContacts.Y}
-      />
-      <Tab
-        selectedTab={selectedTab}
-        letter="Z"
-        fillSelectedTab={fillSelectedTab}
-        selectedContacts={selectedContacts.Z}
-      />
+      {renderTabs()}
+
     </div>
   );
 };
