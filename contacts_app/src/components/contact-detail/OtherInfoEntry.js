@@ -1,7 +1,7 @@
 import React from "react";
 import "./contact-detail-style.css";
 
-const OtherInfoEnty = ({ category, value}) => {
+const OtherInfoEntry = ({ category, value}) => {
 
     return (
         <div>
@@ -11,4 +11,4 @@ const OtherInfoEnty = ({ category, value}) => {
     )
 }
 
-export default OtherInfoEnty;
+export default OtherInfoEntry;

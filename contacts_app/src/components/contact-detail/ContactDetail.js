@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./contact-detail-style.css";
-import OtherInfoEnty from './OtherInfoEnty'
+import OtherInfoEntry from './OtherInfoEntry'
 
 const ContactDetail = ({ clearSelectedCard, selectedCard }) => {
   const wrapperRef = useRef(null);
@@ -44,12 +44,12 @@ const ContactDetail = ({ clearSelectedCard, selectedCard }) => {
             {selectedCard.lastName}, {selectedCard.firstName}
           </span>
           <div className="other-info">
-            <OtherInfoEnty category="City:" value={selectedCard.city} />
-            <OtherInfoEnty category="E-mail:" value={selectedCard.email} />
-            <OtherInfoEnty category="Phone:" value={selectedCard.phone} />
-            <OtherInfoEnty category="Address:" value={selectedCard.street} />
-            <OtherInfoEnty category="State:" value={selectedCard.state} />
-            <OtherInfoEnty category="Postcode:" value={selectedCard.postcode} />
+            <OtherInfoEntry category="City:" value={selectedCard.city} />
+            <OtherInfoEntry category="E-mail:" value={selectedCard.email} />
+            <OtherInfoEntry category="Phone:" value={selectedCard.phone} />
+            <OtherInfoEntry category="Address:" value={selectedCard.street} />
+            <OtherInfoEntry category="State:" value={selectedCard.state} />
+            <OtherInfoEntry category="Postcode:" value={selectedCard.postcode} />
           </div>
         </div>
       </div>
